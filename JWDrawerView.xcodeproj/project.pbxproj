@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5AF80FC1D6F20540080D319 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF80FB1D6F20540080D319 /* main.m */; };
+		C5AF80FF1D6F20540080D319 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF80FE1D6F20540080D319 /* AppDelegate.m */; };
+		C5AF81021D6F20540080D319 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81011D6F20540080D319 /* ViewController.m */; };
+		C5AF81051D6F20540080D319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AF81031D6F20540080D319 /* Main.storyboard */; };
+		C5AF81071D6F20540080D319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AF81061D6F20540080D319 /* Assets.xcassets */; };
+		C5AF810A1D6F20540080D319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AF81081D6F20540080D319 /* LaunchScreen.storyboard */; };
+		C5AF81151D6F20540080D319 /* JWDrawerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81141D6F20540080D319 /* JWDrawerViewTests.m */; };
+		C5AF81201D6F20540080D319 /* JWDrawerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF811F1D6F20540080D319 /* JWDrawerViewUITests.m */; };
+		C5AF812F1D6F20C80080D319 /* JWDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF812E1D6F20C80080D319 /* JWDrawerView.m */; };
+		C5AF81331D6F22A30080D319 /* JWUpDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */; };
+		C5AF81391D6F3B420080D319 /* JWLeftDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */; };
+		C5AF813C1D700C320080D319 /* JWRightDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF813B1D700C320080D319 /* JWRightDrawerView.m */; };
+		C5AF813F1D700C470080D319 /* JWDownDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF813E1D700C470080D319 /* JWDownDrawerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5AF81111D6F20540080D319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5AF80EF1D6F20540080D319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5AF80F61D6F20540080D319;
+			remoteInfo = JWDrawerView;
+		};
+		C5AF811C1D6F20540080D319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5AF80EF1D6F20540080D319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5AF80F61D6F20540080D319;
+			remoteInfo = JWDrawerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5AF80F71D6F20540080D319 /* JWDrawerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWDrawerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AF80FB1D6F20540080D319 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5AF80FD1D6F20540080D319 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5AF80FE1D6F20540080D319 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5AF81001D6F20540080D319 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C5AF81011D6F20540080D319 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C5AF81041D6F20540080D319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5AF81061D6F20540080D319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5AF81091D6F20540080D319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5AF810B1D6F20540080D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5AF81101D6F20540080D319 /* JWDrawerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWDrawerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AF81141D6F20540080D319 /* JWDrawerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDrawerViewTests.m; sourceTree = "<group>"; };
+		C5AF81161D6F20540080D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5AF811B1D6F20540080D319 /* JWDrawerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWDrawerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5AF811F1D6F20540080D319 /* JWDrawerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDrawerViewUITests.m; sourceTree = "<group>"; };
+		C5AF81211D6F20540080D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5AF812D1D6F20C80080D319 /* JWDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDrawerView.h; sourceTree = "<group>"; };
+		C5AF812E1D6F20C80080D319 /* JWDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDrawerView.m; sourceTree = "<group>"; };
+		C5AF81311D6F22A30080D319 /* JWUpDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWUpDrawerView.h; path = DrawerView/JWUpDrawerView.h; sourceTree = "<group>"; };
+		C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWUpDrawerView.m; path = DrawerView/JWUpDrawerView.m; sourceTree = "<group>"; };
+		C5AF81371D6F3B420080D319 /* JWLeftDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLeftDrawerView.h; path = DrawerView/JWLeftDrawerView.h; sourceTree = "<group>"; };
+		C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLeftDrawerView.m; path = DrawerView/JWLeftDrawerView.m; sourceTree = "<group>"; };
+		C5AF813A1D700C320080D319 /* JWRightDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRightDrawerView.h; path = DrawerView/JWRightDrawerView.h; sourceTree = "<group>"; };
+		C5AF813B1D700C320080D319 /* JWRightDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRightDrawerView.m; path = DrawerView/JWRightDrawerView.m; sourceTree = "<group>"; };
+		C5AF813D1D700C470080D319 /* JWDownDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDownDrawerView.h; path = DrawerView/JWDownDrawerView.h; sourceTree = "<group>"; };
+		C5AF813E1D700C470080D319 /* JWDownDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDownDrawerView.m; path = DrawerView/JWDownDrawerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5AF80F41D6F20540080D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF810D1D6F20540080D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF81181D6F20540080D319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5AF80EE1D6F20540080D319 = {
+			isa = PBXGroup;
+			children = (
+				C5AF80F91D6F20540080D319 /* JWDrawerView */,
+				C5AF81131D6F20540080D319 /* JWDrawerViewTests */,
+				C5AF811E1D6F20540080D319 /* JWDrawerViewUITests */,
+				C5AF80F81D6F20540080D319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5AF80F81D6F20540080D319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF80F71D6F20540080D319 /* JWDrawerView.app */,
+				C5AF81101D6F20540080D319 /* JWDrawerViewTests.xctest */,
+				C5AF811B1D6F20540080D319 /* JWDrawerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5AF80F91D6F20540080D319 /* JWDrawerView */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF81301D6F20EB0080D319 /* DrawerView */,
+				C5AF81001D6F20540080D319 /* ViewController.h */,
+				C5AF81011D6F20540080D319 /* ViewController.m */,
+				C5AF81031D6F20540080D319 /* Main.storyboard */,
+				C5AF80FA1D6F20540080D319 /* Supporting Files */,
+			);
+			path = JWDrawerView;
+			sourceTree = "<group>";
+		};
+		C5AF80FA1D6F20540080D319 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF81081D6F20540080D319 /* LaunchScreen.storyboard */,
+				C5AF810B1D6F20540080D319 /* Info.plist */,
+				C5AF81061D6F20540080D319 /* Assets.xcassets */,
+				C5AF80FD1D6F20540080D319 /* AppDelegate.h */,
+				C5AF80FE1D6F20540080D319 /* AppDelegate.m */,
+				C5AF80FB1D6F20540080D319 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5AF81131D6F20540080D319 /* JWDrawerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF81141D6F20540080D319 /* JWDrawerViewTests.m */,
+				C5AF81161D6F20540080D319 /* Info.plist */,
+			);
+			path = JWDrawerViewTests;
+			sourceTree = "<group>";
+		};
+		C5AF811E1D6F20540080D319 /* JWDrawerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF811F1D6F20540080D319 /* JWDrawerViewUITests.m */,
+				C5AF81211D6F20540080D319 /* Info.plist */,
+			);
+			path = JWDrawerViewUITests;
+			sourceTree = "<group>";
+		};
+		C5AF81301D6F20EB0080D319 /* DrawerView */ = {
+			isa = PBXGroup;
+			children = (
+				C5AF812D1D6F20C80080D319 /* JWDrawerView.h */,
+				C5AF812E1D6F20C80080D319 /* JWDrawerView.m */,
+				C5AF81311D6F22A30080D319 /* JWUpDrawerView.h */,
+				C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */,
+				C5AF81371D6F3B420080D319 /* JWLeftDrawerView.h */,
+				C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */,
+				C5AF813A1D700C320080D319 /* JWRightDrawerView.h */,
+				C5AF813B1D700C320080D319 /* JWRightDrawerView.m */,
+				C5AF813D1D700C470080D319 /* JWDownDrawerView.h */,
+				C5AF813E1D700C470080D319 /* JWDownDrawerView.m */,
+			);
+			name = DrawerView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5AF80F61D6F20540080D319 /* JWDrawerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AF81241D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerView" */;
+			buildPhases = (
+				C5AF80F31D6F20540080D319 /* Sources */,
+				C5AF80F41D6F20540080D319 /* Frameworks */,
+				C5AF80F51D6F20540080D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWDrawerView;
+			productName = JWDrawerView;
+			productReference = C5AF80F71D6F20540080D319 /* JWDrawerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5AF810F1D6F20540080D319 /* JWDrawerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AF81271D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerViewTests" */;
+			buildPhases = (
+				C5AF810C1D6F20540080D319 /* Sources */,
+				C5AF810D1D6F20540080D319 /* Frameworks */,
+				C5AF810E1D6F20540080D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5AF81121D6F20540080D319 /* PBXTargetDependency */,
+			);
+			name = JWDrawerViewTests;
+			productName = JWDrawerViewTests;
+			productReference = C5AF81101D6F20540080D319 /* JWDrawerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5AF811A1D6F20540080D319 /* JWDrawerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5AF812A1D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerViewUITests" */;
+			buildPhases = (
+				C5AF81171D6F20540080D319 /* Sources */,
+				C5AF81181D6F20540080D319 /* Frameworks */,
+				C5AF81191D6F20540080D319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5AF811D1D6F20540080D319 /* PBXTargetDependency */,
+			);
+			name = JWDrawerViewUITests;
+			productName = JWDrawerViewUITests;
+			productReference = C5AF811B1D6F20540080D319 /* JWDrawerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5AF80EF1D6F20540080D319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JW;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = huangjw;
+				TargetAttributes = {
+					C5AF80F61D6F20540080D319 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C5AF810F1D6F20540080D319 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5AF80F61D6F20540080D319;
+					};
+					C5AF811A1D6F20540080D319 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C5AF80F61D6F20540080D319;
+					};
+				};
+			};
+			buildConfigurationList = C5AF80F21D6F20540080D319 /* Build configuration list for PBXProject "JWDrawerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5AF80EE1D6F20540080D319;
+			productRefGroup = C5AF80F81D6F20540080D319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5AF80F61D6F20540080D319 /* JWDrawerView */,
+				C5AF810F1D6F20540080D319 /* JWDrawerViewTests */,
+				C5AF811A1D6F20540080D319 /* JWDrawerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5AF80F51D6F20540080D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF810A1D6F20540080D319 /* LaunchScreen.storyboard in Resources */,
+				C5AF81071D6F20540080D319 /* Assets.xcassets in Resources */,
+				C5AF81051D6F20540080D319 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF810E1D6F20540080D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF81191D6F20540080D319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5AF80F31D6F20540080D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF81021D6F20540080D319 /* ViewController.m in Sources */,
+				C5AF81391D6F3B420080D319 /* JWLeftDrawerView.m in Sources */,
+				C5AF80FF1D6F20540080D319 /* AppDelegate.m in Sources */,
+				C5AF813C1D700C320080D319 /* JWRightDrawerView.m in Sources */,
+				C5AF812F1D6F20C80080D319 /* JWDrawerView.m in Sources */,
+				C5AF80FC1D6F20540080D319 /* main.m in Sources */,
+				C5AF813F1D700C470080D319 /* JWDownDrawerView.m in Sources */,
+				C5AF81331D6F22A30080D319 /* JWUpDrawerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF810C1D6F20540080D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF81151D6F20540080D319 /* JWDrawerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5AF81171D6F20540080D319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5AF81201D6F20540080D319 /* JWDrawerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5AF81121D6F20540080D319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5AF80F61D6F20540080D319 /* JWDrawerView */;
+			targetProxy = C5AF81111D6F20540080D319 /* PBXContainerItemProxy */;
+		};
+		C5AF811D1D6F20540080D319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5AF80F61D6F20540080D319 /* JWDrawerView */;
+			targetProxy = C5AF811C1D6F20540080D319 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5AF81031D6F20540080D319 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5AF81041D6F20540080D319 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5AF81081D6F20540080D319 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5AF81091D6F20540080D319 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5AF81221D6F20540080D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5AF81231D6F20540080D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5AF81251D6F20540080D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JWDrawerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5AF81261D6F20540080D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JWDrawerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5AF81281D6F20540080D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JWDrawerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWDrawerView.app/JWDrawerView";
+			};
+			name = Debug;
+		};
+		C5AF81291D6F20540080D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JWDrawerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JWDrawerView.app/JWDrawerView";
+			};
+			name = Release;
+		};
+		C5AF812B1D6F20540080D319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JWDrawerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWDrawerView;
+			};
+			name = Debug;
+		};
+		C5AF812C1D6F20540080D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JWDrawerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = first.JWDrawerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JWDrawerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5AF80F21D6F20540080D319 /* Build configuration list for PBXProject "JWDrawerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AF81221D6F20540080D319 /* Debug */,
+				C5AF81231D6F20540080D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AF81241D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AF81251D6F20540080D319 /* Debug */,
+				C5AF81261D6F20540080D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AF81271D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AF81281D6F20540080D319 /* Debug */,
+				C5AF81291D6F20540080D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5AF812A1D6F20540080D319 /* Build configuration list for PBXNativeTarget "JWDrawerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5AF812B1D6F20540080D319 /* Debug */,
+				C5AF812C1D6F20540080D319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5AF80EF1D6F20540080D319 /* Project object */;
+}
