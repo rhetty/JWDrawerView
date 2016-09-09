@@ -15,10 +15,6 @@
 		C5AF810A1D6F20540080D319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5AF81081D6F20540080D319 /* LaunchScreen.storyboard */; };
 		C5AF81151D6F20540080D319 /* JWDrawerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81141D6F20540080D319 /* JWDrawerViewTests.m */; };
 		C5AF81201D6F20540080D319 /* JWDrawerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF811F1D6F20540080D319 /* JWDrawerViewUITests.m */; };
-		C5AF81331D6F22A30080D319 /* JWUpDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */; };
-		C5AF81391D6F3B420080D319 /* JWLeftDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */; };
-		C5AF813C1D700C320080D319 /* JWRightDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF813B1D700C320080D319 /* JWRightDrawerView.m */; };
-		C5AF813F1D700C470080D319 /* JWDownDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF813E1D700C470080D319 /* JWDownDrawerView.m */; };
 		C5AF81421D70196E0080D319 /* JWDrawerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF81411D70196E0080D319 /* JWDrawerView.m */; };
 /* End PBXBuildFile section */
 
@@ -56,14 +52,6 @@
 		C5AF811B1D6F20540080D319 /* JWDrawerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWDrawerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AF811F1D6F20540080D319 /* JWDrawerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWDrawerViewUITests.m; sourceTree = "<group>"; };
 		C5AF81211D6F20540080D319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5AF81311D6F22A30080D319 /* JWUpDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWUpDrawerView.h; path = DrawerView/JWUpDrawerView.h; sourceTree = "<group>"; };
-		C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWUpDrawerView.m; path = DrawerView/JWUpDrawerView.m; sourceTree = "<group>"; };
-		C5AF81371D6F3B420080D319 /* JWLeftDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWLeftDrawerView.h; path = DrawerView/JWLeftDrawerView.h; sourceTree = "<group>"; };
-		C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWLeftDrawerView.m; path = DrawerView/JWLeftDrawerView.m; sourceTree = "<group>"; };
-		C5AF813A1D700C320080D319 /* JWRightDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWRightDrawerView.h; path = DrawerView/JWRightDrawerView.h; sourceTree = "<group>"; };
-		C5AF813B1D700C320080D319 /* JWRightDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWRightDrawerView.m; path = DrawerView/JWRightDrawerView.m; sourceTree = "<group>"; };
-		C5AF813D1D700C470080D319 /* JWDownDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDownDrawerView.h; path = DrawerView/JWDownDrawerView.h; sourceTree = "<group>"; };
-		C5AF813E1D700C470080D319 /* JWDownDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDownDrawerView.m; path = DrawerView/JWDownDrawerView.m; sourceTree = "<group>"; };
 		C5AF81401D70196E0080D319 /* JWDrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JWDrawerView.h; path = DrawerView/JWDrawerView.h; sourceTree = "<group>"; };
 		C5AF81411D70196E0080D319 /* JWDrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JWDrawerView.m; path = DrawerView/JWDrawerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,14 +149,6 @@
 			children = (
 				C5AF81401D70196E0080D319 /* JWDrawerView.h */,
 				C5AF81411D70196E0080D319 /* JWDrawerView.m */,
-				C5AF81311D6F22A30080D319 /* JWUpDrawerView.h */,
-				C5AF81321D6F22A30080D319 /* JWUpDrawerView.m */,
-				C5AF81371D6F3B420080D319 /* JWLeftDrawerView.h */,
-				C5AF81381D6F3B420080D319 /* JWLeftDrawerView.m */,
-				C5AF813A1D700C320080D319 /* JWRightDrawerView.h */,
-				C5AF813B1D700C320080D319 /* JWRightDrawerView.m */,
-				C5AF813D1D700C470080D319 /* JWDownDrawerView.h */,
-				C5AF813E1D700C470080D319 /* JWDownDrawerView.m */,
 			);
 			name = DrawerView;
 			sourceTree = "<group>";
@@ -305,13 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AF81021D6F20540080D319 /* ViewController.m in Sources */,
-				C5AF81391D6F3B420080D319 /* JWLeftDrawerView.m in Sources */,
 				C5AF81421D70196E0080D319 /* JWDrawerView.m in Sources */,
 				C5AF80FF1D6F20540080D319 /* AppDelegate.m in Sources */,
-				C5AF813C1D700C320080D319 /* JWRightDrawerView.m in Sources */,
 				C5AF80FC1D6F20540080D319 /* main.m in Sources */,
-				C5AF813F1D700C470080D319 /* JWDownDrawerView.m in Sources */,
-				C5AF81331D6F22A30080D319 /* JWUpDrawerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

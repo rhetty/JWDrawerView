@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "JWUpDrawerView.h"
-#import "JWLeftDrawerView.h"
-#import "JWRightDrawerView.h"
-#import "JWDownDrawerView.h"
+#import "JWDrawerView.h"
 
 @interface ViewController ()
 
@@ -24,41 +21,37 @@
     
     UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, self.view.frame.size.height)];
     contentView.backgroundColor = [UIColor blackColor];
-    
-    UIView *toggleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-    toggleView.backgroundColor = [UIColor redColor];
-    
-    JWLeftDrawerView *drawer = [[JWLeftDrawerView alloc] initWithContentView:contentView contentOffset:0 toggleView:toggleView toggleOffset:100 parentView:self.view];
+    UIView *triggerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    triggerView.backgroundColor = [UIColor redColor];
+    JWDrawerView *drawer = [[JWDrawerView alloc] initWithContentView:contentView contentOffset:0 triggerView:triggerView triggerOffset:100 parentView:self.view];
+    drawer.location = JWDrawerViewLocationLeft;
     [self.view addSubview:drawer];
     
     
     UIView *contentView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
     contentView2.backgroundColor = [UIColor blackColor];
-    
-    UIView *toggleView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-    toggleView2.backgroundColor = [UIColor redColor];
-    
-    JWUpDrawerView *updrawer = [[JWUpDrawerView alloc] initWithContentView:contentView2 contentOffset:0 toggleView:toggleView2 toggleOffset:100 parentView:self.view];
+    UIView *triggerView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    triggerView2.backgroundColor = [UIColor redColor];
+    JWDrawerView *updrawer = [[JWDrawerView alloc] initWithContentView:contentView2 contentOffset:0 triggerView:triggerView2 triggerOffset:100 parentView:self.view];
+    updrawer.location = JWDrawerViewLocationTop;
     [self.view addSubview:updrawer];
-    
+
     
     UIView *contentView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, self.view.frame.size.height)];
     contentView3.backgroundColor = [UIColor blackColor];
-    
-    UIView *toggleView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-    toggleView3.backgroundColor = [UIColor redColor];
-    
-    JWRightDrawerView *rightdrawer = [[JWRightDrawerView alloc] initWithContentView:contentView3 contentOffset:0 toggleView:toggleView3 toggleOffset:100 parentView:self.view];
+    UIView *triggerView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    triggerView3.backgroundColor = [UIColor redColor];
+    JWDrawerView *rightdrawer = [[JWDrawerView alloc] initWithContentView:contentView3 contentOffset:0 triggerView:triggerView3 triggerOffset:100 parentView:self.view];
+    rightdrawer.location = JWDrawerViewLocationRight;
     [self.view addSubview:rightdrawer];
     
     
     UIView *contentView4 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
     contentView4.backgroundColor = [UIColor blackColor];
-    
-    UIView *toggleView4 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-    toggleView4.backgroundColor = [UIColor redColor];
-    
-    JWDownDrawerView *downdrawer = [[JWDownDrawerView alloc] initWithContentView:contentView4 contentOffset:0 toggleView:toggleView4 toggleOffset:100 parentView:self.view];
+    UIView *triggerView4 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
+    triggerView4.backgroundColor = [UIColor redColor];
+    JWDrawerView *downdrawer = [[JWDrawerView alloc] initWithContentView:contentView4 contentOffset:0 triggerView:triggerView4 triggerOffset:100 parentView:self.view];
+    downdrawer.location = JWDrawerViewLocationBottom;
     [self.view addSubview:downdrawer];
 }
 
