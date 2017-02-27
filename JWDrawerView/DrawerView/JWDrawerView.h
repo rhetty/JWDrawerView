@@ -1,27 +1,57 @@
 //
 //  JWDrawerView.h
-//  JWDrawerView
-//
-//  Created by 黄嘉伟 on 16/8/25.
-//  Copyright © 2016年 huangjw. All rights reserved.
+//  Version 1.0.0
+//  Created by Jiawei Huang on 16/8/25.
 //
 
 #import <UIKit/UIKit.h>
 
-#define OPEN_RATIO 1/3
+static const CGFloat kDistanceTimeRatio = 1200.0f;
+static const CGFloat kOpenRatio = 0.3f;
+static const CGFloat kDefaultContentOffsetRatio = 0.5f;
+static const CGFloat kDefaultTriggerOffsetRatio = 0.382f;
+static const CGFloat kMaskAlpha = 0.5f;
 
-typedef NS_ENUM(NSInteger, JWDrawerViewLocation) {
-    JWDrawerViewLocationLeft,
-    JWDrawerViewLocationRight,
-    JWDrawerViewLocationTop,
-    JWDrawerViewLocationBottom
-};
-
+/**
+ * Displays a drawer with content and trigger.
+ * DOES NOT support rotation.
+ * @note This class is abstract, should use JWLeftDrawerView... instead.
+ */
 @interface JWDrawerView : UIView
-
+{
+  @protected
+  UIView *_contentView;
+  UIView *_triggerView;
+  __weak UIView *_parentView;
+  CGFloat _contentOffset;
+  CGFloat _triggerOffset;
+  CGPoint _openCenter;
+  CGPoint _closeCenter;
+}
+/**
+ * A property which controls the drawer to open or close.
+ */
 @property (nonatomic, assign, getter=isOpen) BOOL open;
-@property (nonatomic, assign) JWDrawerViewLocation location;
-
-- (instancetype)initWithContentView:(UIView *)contentView contentOffset:(CGFloat)contentOffset triggerView:(UIView *)triggerView triggerOffset:(CGFloat)triggerOffset parentView:(UIView *)parentView;
-
+/**
+ * Creates a drawer, and adds it to provided view.
+ * @param view The view that the drawer will be added to.
+ * @param contentView The view that will be displayed in the drawer.
+ * @param triggerView The view that will be displayed as a trigger.
+ * @return A reference to the created drawer.
+ *
+ * @see addDrawerToView:withContentView:triggerView:contentOffset:triggerOffset:location:
+ */
++ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView;
+/**
+ * Creates a drawer, and adds it to provided view.
+ * @param view The view that the drawer will be added to.
+ * @param contentView The view that will be displayed in the drawer.
+ * @param triggerView The view that will be displayed as a trigger.
+ * @param contentOffset The offset of content to the edge of provided view.
+ * @param triggerOffset The offset of trigger to content.
+ * @return A reference to the created drawer.
+ *
+ * @see addDrawerToView:withContentView:triggerView:
+ */
++ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask;
 @end
