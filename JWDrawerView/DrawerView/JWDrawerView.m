@@ -1,9 +1,10 @@
 //
 //  JWDrawerView.m
-//  Version 1.0.0
+//  Version 1.1.0
 //  Created by Jiawei Huang on 16/8/25.
 //
 
+#import "JWDrawerView.h"
 #import "JWLeftDrawerView.h"
 #import "JWRightDrawerView.h"
 #import "JWTopDrawerView.h"
