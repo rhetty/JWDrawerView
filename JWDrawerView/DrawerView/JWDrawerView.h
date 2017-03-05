@@ -45,8 +45,6 @@ static const CGFloat kMaskAlpha = 0.5f;
  * @param contentView The view that will be displayed in the drawer.
  * @param triggerView The view that will be displayed as a trigger.
  * @return A reference to the created drawer.
- *
- * @see addDrawerToView:withContentView:triggerView:contentOffset:triggerOffset:location:
  */
 + (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView;
 /**
@@ -58,8 +56,6 @@ static const CGFloat kMaskAlpha = 0.5f;
  * @param contentOffset The offset of content to the edge of provided view.
  * @param triggerOffset The offset of trigger to content.
  * @return A reference to the created drawer.
- *
- * @see addDrawerToView:withContentView:triggerView:
  */
 + (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView location:(JWDrawerViewLocation)location contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask;
 @end
