@@ -4,7 +4,6 @@
 //  Created by Jiawei Huang on 16/8/25.
 //
 
-#import "JWDrawerView.h"
 #import "JWLeftDrawerView.h"
 #import "JWRightDrawerView.h"
 #import "JWTopDrawerView.h"
