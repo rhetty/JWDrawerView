@@ -5,9 +5,13 @@
 //
 
 #import "JWDrawerView.h"
+#import "JWLeftDrawerView.h"
+#import "JWRightDrawerView.h"
+#import "JWTopDrawerView.h"
+#import "JWBottomDrawerView.h"
 
 #define JWMainThreadAssert() NSAssert([NSThread isMainThread], @"JWDrawerView needs to be accessed on the main thread.");
-#define JWInheritAssert() NSAssert([self class] != [JWDrawerView class], @"JWDrawerView should not be instantiated.");
+#define JWInheritAssert() NSAssert([self class] != [JWDrawerView class], @"JWDrawerView should not be instantiated. Please use (+) methods.");
 
 @interface JWDrawerView()
 @property (nonatomic, strong) UIButton *maskView;
@@ -17,16 +21,31 @@
 
 + (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView
 {
-  return [[self class] addDrawerToView:view withContentView:contentView triggerView:triggerView contentOffset:[[self class] defaultContentOffset:contentView view:view] triggerOffset:[[self class] defaultTriggerOffset:triggerView contentView:contentView] withMask:YES];
+  return [[self class] addDrawerToView:view withContentView:contentView triggerView:triggerView location:JWDrawerViewLocationLeft contentOffset:[[self class] defaultContentOffset:contentView view:view] triggerOffset:[[self class] defaultTriggerOffset:triggerView contentView:contentView] withMask:YES];
 }
 
-+ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask
++ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView location:(JWDrawerViewLocation)location contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask
 {
   if (!view || !contentView || !triggerView) {
     return nil;
   }
   
-  JWDrawerView *drawer = [[[self class] alloc] init];
+  JWDrawerView *drawer;
+  switch (location) {
+    case JWDrawerViewLocationRight:
+      drawer = [[JWRightDrawerView alloc] init];
+      break;
+    case JWDrawerViewLocationTop:
+      drawer = [[JWTopDrawerView alloc] init];
+      break;
+    case JWDrawerViewLocationBottom:
+      drawer = [[JWBottomDrawerView alloc] init];
+      break;
+    default:
+      drawer = [[JWLeftDrawerView alloc] init];
+      break;
+  }
+  
   drawer->_parentView = view;
   drawer->_contentView = contentView;
   drawer->_triggerView = triggerView;

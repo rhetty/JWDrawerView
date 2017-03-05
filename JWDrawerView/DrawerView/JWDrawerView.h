@@ -6,6 +6,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, JWDrawerViewLocation) {
+  JWDrawerViewLocationLeft,
+  JWDrawerViewLocationRight,
+  JWDrawerViewLocationTop,
+  JWDrawerViewLocationBottom
+};
+
 static const CGFloat kDistanceTimeRatio = 1200.0f;
 static const CGFloat kOpenRatio = 0.3f;
 static const CGFloat kDefaultContentOffsetRatio = 0.5f;
@@ -47,11 +54,12 @@ static const CGFloat kMaskAlpha = 0.5f;
  * @param view The view that the drawer will be added to.
  * @param contentView The view that will be displayed in the drawer.
  * @param triggerView The view that will be displayed as a trigger.
+ * @param location Where the drawer is located in screen
  * @param contentOffset The offset of content to the edge of provided view.
  * @param triggerOffset The offset of trigger to content.
  * @return A reference to the created drawer.
  *
  * @see addDrawerToView:withContentView:triggerView:
  */
-+ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask;
++ (instancetype)addDrawerToView:(UIView *)view withContentView:(UIView *)contentView triggerView:(UIView *)triggerView location:(JWDrawerViewLocation)location contentOffset:(CGFloat)contentOffset triggerOffset:(CGFloat)triggerOffset withMask:(BOOL)withMask;
 @end
