@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JWDrawerView"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A slidable view like a drawer."
   s.homepage     = "https://github.com/rhetty/JWDrawerView"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
