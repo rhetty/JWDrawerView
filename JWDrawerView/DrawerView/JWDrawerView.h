@@ -22,7 +22,7 @@ static const CGFloat kMaskAlpha = 0.5f;
 /**
  * Displays a drawer with content and trigger.
  * DOES NOT support rotation.
- * @note This class is abstract, should use JWLeftDrawerView... instead.
+ * @note Instantiate with class methods instead of init.
  */
 @interface JWDrawerView : UIView
 {
